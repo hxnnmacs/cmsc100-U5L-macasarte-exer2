@@ -23,9 +23,8 @@ html, body {           /*resets padding and allow elements/divs to take up space
 
 .main.banner {
     width: 100%;
-    height: 820px; 
+    height: 870px; 
     position: relative; 
-    overflow: hidden;
 }
 
 .main.banner img {
@@ -37,21 +36,109 @@ html, body {           /*resets padding and allow elements/divs to take up space
 
 .nav.box { 
     width: 1620px; 
-    height: 80px;
-    padding: 10px;
+    height: 100px;
+    padding: 5px;
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /*!*/
     background-color: white; 
     border: 1px solid black; 
     border-radius: 20px; 
-    z-index: 2; /* ensures it sits above the image */ 
+}
+
+.nickname {
+    font-family: "Times New Roman", serif;
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    left: 30px; 
+}
+
+.photo.border { 
+    width: 400px; 
+    height: 450px;
+    position: absolute;
+    top: 265px;
+    left: 270px;
+    background-color: #f8e490; 
+    border: 1px solid black; 
+    z-index: 3;
+}
+
+.photo.shadow { 
+    width: 400px; 
+    height: 450px;
+    position: absolute;
+    top: 270px;
+    left: 273px;
+    background-color: black; 
+    border: 1px solid black; 
+    z-index: 2;
+}
+
+.mid.bar {
+    width:100%;
+    padding:15px;
+    background-color: #c6dafa;
+    color: black;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace; 
+}
+
+.surname {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 125px;
+    font-weight: bolder;
+    position: absolute;
+    top: 260px;
+    right: 270px;
+    z-index: 5;
 
 }
+
+.first.name.mi {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    position: absolute;
+    top: 390px;
+    right: 270px;
+    z-index: 5;
+
+}
+
+.biography {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 480px;
+    right: 270px;
+    text-align: right;
+    z-index: 5;
+}
+
+.more.banner {
+    width: 100%;
+    height: 870px; 
+    position: relative; 
+
+}
+
 /* REFERENCES
 
 1. How to use font family:
 https://webmasters.stackexchange.com/questions/23609/need-to-use-helvetica-in-css
+
+2. Position Property:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position
+
+3. translateX:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/translateX
+
+4. z-index:
+https://www.w3schools.com/css/css_z-index.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index
+
 
 */
